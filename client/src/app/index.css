@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@utility container-primary {
+  @apply w-2/3 mx-auto;
+
+  width: 65%;
+  margin: 0 auto;
+
+  @media (width <=80rem) {
+    width: 75%;
+  }
+
+  @media (width <=64rem) {
+    width: 85%;
+  }
+
+  @media (width <=48rem) {
+    width: 95%;
+  }
+}
+
+::-webkit-scrollbar {
+  @apply w-[2px] container;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply w-full bg-neutral-300 rounded-full;
+}
