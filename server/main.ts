@@ -8,7 +8,7 @@ import { notes } from '@/notes/notes.controller'
 
 const app = express()
 
-const DB_LINK = process.env.DB_LINK ?? ''
+const DB_LINK = process.env.DB_LINK || ''
 const PORT = process.env.PORT || 5000
 
 app.use(cors())
